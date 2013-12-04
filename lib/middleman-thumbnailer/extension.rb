@@ -94,7 +94,7 @@ module Middleman
           specs.map do |name, spec|
             resource = nil
             # puts "#{path}: #{spec[:name]}: #{file}"
-            resource = Middleman::Sitemap::Resource.new(@app.sitemap, spec[:name], file) unless name == :original
+            # resource = Middleman::Sitemap::Resource.new(@app.sitemap, spec[:name], file) unless name == :original
           end
         end.flatten.reject {|resource| resource.nil? }
 
